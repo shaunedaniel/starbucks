@@ -1,0 +1,61 @@
+.header {
+  // header wrapper
+  &__wrapper {
+    @include flex(null, space-between, null);
+  }
+  //   brand logo
+  &__logo {
+    img {
+      max-width: 80px;
+    }
+  }
+  //   menu content
+  &__menu {
+    @include flex(null, null, center);
+  }
+  &__menu-item {
+    margin-right: 30px;
+  }
+  &_menu-link {
+    font-size: 1.2em;
+    color: #0e0e0e;
+    text-transform: capitalize;
+    &:hover {
+      color: #0e0e0e;
+    }
+  }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 768px) == */
+@include small {
+  .header {
+    &__toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      span {
+        display: inline-block;
+        width: 40px;
+        height: 5px;
+        background-color: #0e0e0e;
+        &:nth-child(2) {
+          margin: 8px 0px;
+        }
+      }
+    }
+    // menu
+    &__menu {
+      display: none;
+    }
+  }
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}

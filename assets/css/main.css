@@ -1,0 +1,224 @@
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+dl {
+  list-style: none;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus {
+  text-decoration: none;
+}
+
+button, button:hover,
+.btn:hover,
+input:hover, button:active,
+.btn:active,
+input:active, button:focus,
+.btn:focus,
+input:focus,
+.btn,
+input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/*
+ * Remove the text shadow on text selections (opinionated).
+ * 1. Restore the coloring undone by defining the text shadow (opinionated).
+ */
+
+::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000000;
+  /* 1 */
+  text-shadow: none;
+}
+
+.custom_btn {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #017143;
+  color: #fff;
+  max-width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s linear;
+  border: 2px solid transparent;
+}
+
+.custom_btn:hover {
+  border: 2px solid #017143;
+  background-color: transparent;
+  color: #017143;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  max-width: 80px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-item {
+  margin-right: 30px;
+}
+
+.header_menu-link {
+  font-size: 1.2em;
+  color: #0e0e0e;
+  text-transform: capitalize;
+}
+
+.header_menu-link:hover {
+  color: #0e0e0e;
+}
+
+/* === For Small Device ( 0px - 768px) == */
+@media (max-width: 768px) {
+  .header__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header__toggle span {
+    display: inline-block;
+    width: 40px;
+    height: 5px;
+    background-color: #0e0e0e;
+  }
+  .header__toggle span:nth-child(2) {
+    margin: 8px 0px;
+  }
+  .header__menu {
+    display: none;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+.banner__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0px;
+}
+
+.banner__text-wrapper h2 {
+  font-size: 78px;
+  line-height: 88px;
+  text-transform: capitalize;
+}
+
+.banner__text-wrapper h2 .high-light {
+  color: #017143;
+  font-weight: bold;
+}
+
+.banner__text-wrapper h2 .high-light::selection {
+  padding: 0px 15px;
+  background-color: #017143;
+  color: #fff;
+}
+
+.banner__text-wrapper p {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 30px 0px;
+}
+
+.banner__img-wrapper {
+  margin-left: 60px;
+}
+
+.banner__img-wrapper img {
+  max-width: 420px;
+}
+
+/* === For Small Device ( 0px - 768px) == */
+@media (max-width: 768px) {
+  .banner__content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .banner__text-wrapper {
+    order: 2;
+  }
+  .banner__text-wrapper h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .banner__img-wrapper {
+    order: 1;
+    margin-left: 0px;
+  }
+  .banner__img-wrapper img {
+    max-width: 100%;
+  }
+}
+
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+/* === For Small Device ( 0px - 767px) == */
+/* === For Extra small Device ( 320px - 575px) == */
+/* === For Medium Device ( 768px - 1023px) == */
+/* === For Large Device ( 1024px - 1200px) == */
+/*# sourceMappingURL=main.css.map */

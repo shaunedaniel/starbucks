@@ -1,0 +1,69 @@
+.banner {
+  &__content {
+    @include flex(null, space-between, center);
+    padding: 80px 0px;
+  }
+  &__text-wrapper {
+    h2 {
+      font-size: 78px;
+      line-height: 88px;
+      text-transform: capitalize;
+
+      .high-light {
+        color: #017143;
+        font-weight: bold;
+        &::selection {
+          padding: 0px 15px;
+          background-color: #017143;
+          color: #fff;
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 28px;
+      margin: 30px 0px;
+    }
+  }
+  &__img-wrapper {
+    margin-left: 60px;
+    img {
+      max-width: 420px;
+    }
+  }
+}
+
+// Responsive
+/* === For Small Device ( 0px - 768px) == */
+@include small {
+  .banner {
+    &__content {
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__text-wrapper {
+      order: 2;
+      h2 {
+        font-size: 48px;
+        line-height: 58px;
+      }
+    }
+    // remove margin from img
+    &__img-wrapper {
+      order: 1;
+      margin-left: 0px;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+/* === For Extra small Device ( 320px - 575px) == */
+@include ex_small {
+}
+/* === For Medium Device ( 768px - 1023px) == */
+@include medium {
+}
+/* === For Large Device ( 1024px - 1200px) == */
+@include large {
+}
