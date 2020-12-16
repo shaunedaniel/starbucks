@@ -1,0 +1,19 @@
+.custom_btn {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #017143;
+  color: #fff;
+  max-width: 180px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s linear;
+  border: 2px solid transparent;
+  &:hover {
+    border: 2px solid #017143;
+    background-color: transparent;
+    color: #017143;
+  }
+}
